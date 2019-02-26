@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ajax Exercise</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+<form action="/action_page.php" method="post">
+    Department:<br>
+    <select id="department" onchange="selectjob('department', 'job')">
+    </select>
+    <br>
+    Job:<br>
+    <select id="job">
+    </select>
+    <br>
+  Name:<br>
+  <input type="text" id="name" name="name" value="">
+  <br>
+  Email:<br>
+  <input type="text" id="email" name="email" value="">
+  <br>
+  Phone:<br>
+  <input type="text" id="phone" name="phone" value="">
+  <br><br>
+  <input type="button" value="Submit" onclick="create()">
+</form> 
+
+</body>
+
+</html>

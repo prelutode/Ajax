@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ajax Exercise</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="create">
+            <button type="button" onclick="loadForm('formhide', 'form1.html', 'selectdepart.php', 'department')">CREATE</button>
+            <div id="formhide"></div>
+            <div id="result"></div>
+        </div>
+        <div class="view">
+            <button type="button" onclick="loadForm('tablehide', 'form2.html', 'selectdepart.php', 'department2')">VIEW</button>
+            <div id="tablehide"></div>
+            <p id="messajejson"></p>
+            <div id="resultjson"></div>
+            <p id="messajetable"></p>
+            <div id="resultable"></div>
+        </div>
+    </div>
+</body>
+
+</html>
