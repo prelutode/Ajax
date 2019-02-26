@@ -26,6 +26,7 @@ function selectjob($idselect, $u) {
   selectoptions($u, xhttp);
   var department = document.getElementById($idselect).value;
   document.getElementById("result").innerHTML = '';
+  restart();
   xhttp.open("GET", "http://127.0.0.1/ajax/selectjob.php?department=" + department, true);
   xhttp.send();
 }
@@ -102,4 +103,11 @@ function view() {
 	sxmlhttp.open("POST", "http://127.0.0.1/ajax/view.php", true);
 	sxmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	sxmlhttp.send("department2=" + department2 + "&job2=" + job2);
+}
+
+function restart(){
+  document.getElementById("messajejson").innerHTML = '';
+  document.getElementById("resultjson").innerHTML = '';
+  document.getElementById("messajetable").innerHTML = '';
+  document.getElementById("resultable").innerHTML = '';
 }
